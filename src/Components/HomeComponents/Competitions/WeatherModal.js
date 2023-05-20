@@ -1,6 +1,7 @@
 import React from 'react'
 import './WeatherModal.css'
 import { IoClose } from "react-icons/io5";
+import CardBlog from './CardBlog/CardBlog'
 
 const WeatherModal = () => {
     return (
@@ -16,7 +17,7 @@ const WeatherModal = () => {
                             <div className="container">
                                 <div className="row">
                                     <div className="col-12 col-lg-11 col-md-11 mx-auto">
-
+                                        <CardBlog />
                                     </div>
                                 </div>
                             </div>

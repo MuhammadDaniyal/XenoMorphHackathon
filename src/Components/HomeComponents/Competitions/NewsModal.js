@@ -1,6 +1,7 @@
 import React from 'react'
 import './NewsModal.css'
 import { IoClose } from "react-icons/io5";
+import CardBlog from './CardBlog/CardBlog'
 const NewsModal = () => {
     return (
         <div class="modal fade" data-bs-backdrop="static" data-bs-keyboard="false" id="newsModal" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
