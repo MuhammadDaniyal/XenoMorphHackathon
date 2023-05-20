@@ -14,7 +14,6 @@ const Main = () => {
             <h1>Discover Pakistan</h1>
             <p className='text-center'>Discover, Explore, Experience -  Your Gateway to Unforgettable Journeys!</p>
             <Fade bottom>
-
               <div >
                 <SearchBar />
               </div>

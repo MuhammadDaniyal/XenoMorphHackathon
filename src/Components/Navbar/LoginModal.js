@@ -7,12 +7,12 @@ const LoginModal = () => {
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" style={{ width: "50rem" }}>
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h2 class="modal-title">Login</h2>
+                        <h2 class="modal-title m-auto">Login</h2>
                         <IoClose className="modal-btn-close" data-bs-dismiss="modal" />
                     </div>
                     <div class="modal-body">
                     <div className="container">
-                                <div className="row mx-auto">
+                                <div className="row mx-auto p-5">
                                     <div className="col-12 col-lg-12 contact-rightside mx-auto">
                                         <form method='POST'>
 
@@ -30,7 +30,7 @@ const LoginModal = () => {
                                                 </div>
                                             </div>
                                             <div className="row">
-                                                <div className="col-12 col-lg-11 mx-auto">
+                                                <div className="col-12 col-lg-11 mx-auto my-3">
                                                     <input type="password"
                                                         name="password"
                                                         id=""
@@ -42,11 +42,13 @@ const LoginModal = () => {
                                                     <span class="separator"> </span>
                                                 </div>
                                             </div>
-                                            <button
-                                                type="submit"
-                                                className="mybtn-contact">
-                                                Login
-                                            </button>
+                                            <div className='container d-flex justify-content-center align-items-center'>
+                                                <button
+                                                    type="submit"
+                                                    className="mybtn-contact w-50">
+                                                    Login
+                                                </button>
+                                            </div>
                                         </form>
                                     </div>
                                 </div>

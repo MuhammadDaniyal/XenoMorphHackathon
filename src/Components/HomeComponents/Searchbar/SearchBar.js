@@ -167,10 +167,20 @@ const SearchBar = () => {
                                                     </div>
                                                 </>}
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
+                            <div class="container d-flex flex-row justify-content-center align-items-center py-3" style={{ textAlign: "left" }}>
+                                <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    className="fs-2"/>
+                                <label class="form-check-label" className='fs-4 mx-3 text-dark'>
+                                    Get Weather, Hotels and Latest News Updates about this Route daily.
+                                </label>
+                            </div>
                     </div>
                 </div>
             </div>

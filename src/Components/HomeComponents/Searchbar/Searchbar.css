@@ -3,12 +3,13 @@
     width: 112rem;
     height: 18rem;
     margin-top: 2rem;
+    padding-bottom: 10px;
 }
 
 .search-bar2 {
     background: rgba(255, 255, 255, 0.25);
     width: 112rem;
-    height: 10rem;
+    height: 13rem;
     padding-bottom: 2rem;
 }
 

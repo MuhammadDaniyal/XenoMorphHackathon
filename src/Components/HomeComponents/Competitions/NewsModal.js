@@ -8,14 +8,16 @@ const NewsModal = () => {
             <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h2 class="modal-title">News Information</h2>
+                        <h2 class="modal-title m-auto">News Information</h2>
                         <IoClose className="modal-btn-close" data-bs-dismiss="modal" />
                     </div>
                     <div class="modal-body">
                         <div className="container">
                             <div className="row">
                                 <div className="col-12 col-lg-11 col-md-11 mx-auto">
-                                
+                                <CardBlog/>
+                                <CardBlog/>
+                                <CardBlog/>
                                 </div>
                             </div>
                         </div>

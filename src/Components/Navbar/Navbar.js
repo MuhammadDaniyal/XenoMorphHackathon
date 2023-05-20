@@ -16,11 +16,11 @@ const Navbar = () => {
                                 onClick={() => { setActiveMenu(false) }}>Home</NavLink>
                         </li>
                         <li>
-                            <NavLink to='/' className='navbar-link home-link bg-dark px-4 py-2'
+                            <NavLink to='/' className='navbar-link1'
                                 onClick={() => { setActiveMenu(false) }} data-bs-toggle="modal" data-bs-target="#loginModal">Login</NavLink>
                         </li>
                         <li>
-                            <NavLink to='/' className='navbar-link home-link bg-dark px-4 py-2'
+                            <NavLink to='/' className='navbar-link1'
                                 onClick={() => { setActiveMenu(false) }} data-bs-toggle="modal" data-bs-target="#signUpModal">Signup</NavLink>
                         </li>
                     </ul>

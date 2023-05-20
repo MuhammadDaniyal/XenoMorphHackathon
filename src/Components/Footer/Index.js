@@ -13,9 +13,9 @@ const Index = () => {
                             <img className="mb-5 mt-2" src={require('../../pakroute_logo.png')} alt="" width="100rem"/>
                         </div>
                         <h3 className="footer-h3 justify-content-center align-items-center d-flex  pb-3"> Our Mission</h3>
-                        <p style={{ fontSize: "1.5rem", fontWeight: "600" }}>We are a Community of Coding Enthusiasts hoping to make every individual better</p>
+                        <p style={{ fontSize: "1.5rem", fontWeight: "600", textAlign: "center" }}>We are a Travelling Enthusiasts hoping to make every individual trip better</p>
                         <p className="pera-top"
-                            style={{ fontSize: "1.4rem", fontWeight: "300", textAlign: "justify" }}>A community of like-minded individuals who share a passion for coding. We believe that learning is a lifelong process, and that's why we encourage our members to explore new ideas and technologies.
+                            style={{ fontSize: "1.4rem", fontWeight: "300", textAlign: "center" }}>A Guide to discover Amazing lands of Pakistan. In Pakistan, you'll discover a world of natural beauty, rich history, warm hospitality, and unforgettable experiences.
                         </p>
                         <div className="justify-content-center align-items-center d-flex">
                             <button type="button" className=" my-btn-F btn  px-4"
@@ -24,9 +24,8 @@ const Index = () => {
                     </div>
                     <div className=" secondCol col-lg-3 col-mg-3 col-10 pt-4 mt-3">
                         <h3 className="footer-h3 justify-content-center align-items-center d-flex py-3">Important Links</h3>
-                        <div className="link-div" style={{ fontWeight: "300" }}>
+                        <div className="link-div" style={{ fontWeight: "300", textAlign: "center" }}>
                             <div className='link-inner-div'>
-
                                 <div><NavLink className="link-light text-decoration-none" to="/">Home</NavLink></div>
                                 <div><NavLink className="link-light text-decoration-none" to="/about">About Us</NavLink></div>
                                 <div><NavLink className="link-light text-decoration-none" to="/blogs">Blogs</NavLink></div>
@@ -64,10 +63,10 @@ const Index = () => {
                     </div>
                     <div className="col-lg-3 col-mg-3 col-10 pt-4 mt-3">
                         <h3 className="footer-h3 justify-content-center align-items-center d-flex py-3">Contact Us</h3>
-                        <div className='thirdCol-inner-div'>
+                        <div className='thirdCol-inner-div' style={{textAlign: "center"}}>
                             <i className="bi bi-telephone pe-2"></i> 0315-8951125<br />
-                            <i className="bi bi-envelope pe-2"></i> koder_club@gmail.com<br />
-                            <i className="bi bi-globe pe-2"></i> STForce.surge.sh<br />
+                            <i className="bi bi-envelope pe-2"></i> DiscoverPakistan@gmail.com<br />
+                            <i className="bi bi-globe pe-2"></i> Discover Pakistan<br />
                             <i className="bi bi-geo-alt pe-2"></i>CSIT Department,Main University Rd, NED University Of Engineering & Technology, Karachi,
                             Karachi City, Sindh 75270
                             <iframe className="d-flex my-4 mx-auto"

@@ -169,7 +169,41 @@ header {
     position: relative;
     text-decoration: none;
 }
+.navbar-link1 {
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+    padding: 8px 15px 8px 15px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background-color: #141e30;
+    border: 2px solid #141e30;
+}
+.navbar-link1:hover {
+    color: #ffffff;
+    position: relative;
+    text-decoration: none;
+    padding: 8px 15px 8px 15px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    background-color: #275f79;
+    transition: 0.7s all ease;
+    border: 2px solid #ffffff;
+}
 
+.navbar-link1::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2.3px;
+    border-radius: 4px;
+    background-color: #fff;
+    bottom: -4px;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
 .navbar-link::before {
     content: '';
     position: absolute;

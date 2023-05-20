@@ -10,20 +10,28 @@ import { IoNewspaperOutline } from "react-icons/io5";
 import WeatherModal from './WeatherModal';
 import HotelModal from './HotelModal';
 import NewsModal from './NewsModal';
+import sunny from '../../../sunny.png'
+import cold from '../../../cold.png'
+import locbg from '../../../locbg.png'
+import hotelbg from '../../../hotelbg.png'
+import newsbg from '../../../newsbg.png'
+import Rating from '@mui/material/Rating';
 
 const Competions = () => {
 
+  const temp = 23;
+
   return (
     <>
-      <div className='comp_main'>
+      <div className='container comp_main'>
         <Slide left>
           <main>
-            <div className="main_card">
+            <div className="main_card" style={{backgroundImage:`url(${locbg})`,backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
               <p>Location</p>
               <h2>Karachi</h2>
             </div>
             {/* Weather */}
-            <div class="card" data-bs-toggle="modal" data-bs-target="#weatherModal" >
+            <div class="card" style={{backgroundImage:`url(${temp>25?sunny:cold})`,backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
               <div className="icon">
                 <TiWeatherPartlySunny style={{ fontSize: '5rem' }} />
               </div>
@@ -40,9 +48,9 @@ const Competions = () => {
                     Temp :
                   </span>
                   <span className='span2'>
-                    37
+                  {temp}
                   </span>
-                  <TbTemperatureCelsius style={{ fontSize: '2rem', color: "#888" }} />
+                  <TbTemperatureCelsius style={{ fontSize: '2rem', color: "#ffffff" }} />
                 </p>
                 <p className='inner-content-weather'>
                   <span className='span1'>
@@ -51,7 +59,7 @@ const Competions = () => {
                   <span className='span2'>
                     35
                   </span>
-                  <TbTemperatureCelsius style={{ fontSize: '2rem', color: "#888" }} />
+                  <TbTemperatureCelsius style={{ fontSize: '2rem', color: "#ffffff" }} />
                 </p>
                 <p className='inner-content-weather'>
                   <span className='span1'>
@@ -60,7 +68,7 @@ const Competions = () => {
                   <span className='span2'>
                     2.03
                   </span>
-                  <BsWind style={{ fontSize: '2rem', color: "#888" }} />
+                  <BsWind style={{ fontSize: '2rem', color: "#ffffff" }} />
                 </p>
                 <p className='inner-content-weather'>
                   <span className='span1'>
@@ -69,43 +77,45 @@ const Competions = () => {
                   <span className='span2'>
                     14
                   </span>
-                  <WiHumidity style={{ fontSize: '2rem', color: "#888" }} />
+                  <WiHumidity style={{ fontSize: '2rem', color: "#ffffff" }} />
                 </p>
               </div>
             </div>
             {/* Hotels */}
-            <div class="card" data-bs-toggle="modal" data-bs-target="#hotelModal">
+            <div class="card" data-bs-toggle="modal" data-bs-target="#hotelModal" style={{backgroundImage:`url(${hotelbg})`,backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
               <div className="icon">
                 <RiCommunityLine style={{ fontSize: '5rem' }} />
               </div>
 
               <div class="card-content">
-                <h2>
-                  Hotels
-                </h2>
+                <h3>
+                 Hotels
+                </h3>
                 <p>
                   Available Hotels in Karachi
                 </p>
                 <p className='inner-content-hotel'>
                   <p className='p1'>
-                    Pappu Hotel Ltd
+                    Pearl Continental Hotel
                   </p>
-                  <p className='p2'>
+                  <Rating name="read-only" value={5} readOnly />
+                  {/* <p className='p2'>
                     located in karachi
-                  </p>
+                  </p> */}
                 </p>
                 <p className='inner-content-hotel'>
                   <p className='p1'>
-                    Pappu Hotel Ltd
+                    Mehran Hotel
                   </p>
-                  <p className='p2'>
+                  <Rating name="read-only" value={4.5} readOnly />
+                  {/* <p className='p2'>
                     located in karachi
-                  </p>
+                  </p> */}
                 </p>
               </div>
             </div>
             {/* News */}
-            <div class="card" data-bs-toggle="modal" data-bs-target="#newsModal">
+            <div class="card" data-bs-toggle="modal" data-bs-target="#newsModal" style={{backgroundImage:`url(${newsbg})`,backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
               <div className="icon">
                 <IoNewspaperOutline style={{ fontSize: '5rem' }} />
               </div>
@@ -117,29 +127,24 @@ const Competions = () => {
                 <p>
                   Important news in Karachi
                 </p>
-                <p className='inner-content-news'>
+                <p className='inner-content-hotel'>
                   <p className='p1'>
-                    Pakistan ny India ko 10 wicket sy haraya
+                    Heavy Rainfall...
                   </p>
                   <div className='inner-content-news-div'>
-                    <p className='p2'>
-                      DailyTimes
-                    </p>
-                    <p className='p2'>
-                      - 12 june 2023
+                    <p className='fs-5 m-0 p-0'>
+                      Dawn news - 12 may 2023
                     </p>
                   </div>
+                  
                 </p>
-                <p className='inner-content-news'>
+                <p className='inner-content-hotel'>
                   <p className='p1'>
-                    Pakistan ny India ko 10 wicket sy haraya
+                    Road Blocked Due...
                   </p>
                   <div className='inner-content-news-div'>
-                    <p className='p2'>
-                      DailyTimes
-                    </p>
-                    <p className='p2'>
-                      - 12 june 2023
+                    <p className='fs-5 m-0 p-0'>
+                      DailyTimes - 15 feb 2023
                     </p>
                   </div>
                 </p>
