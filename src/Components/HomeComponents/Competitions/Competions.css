@@ -8,15 +8,16 @@
 .main_card {
   display: flex;
   width: 29rem;
+  justify-content: center;
   flex-direction: column;
   height: 40rem;
   border-radius: 15px;
   overflow: hidden;
   cursor: pointer;
-  position: relative;
+  /* position: relative; */
   color: white;
   box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
-  gap: 26px;
+  gap: 12px;
   padding: 4rem 2rem 4rem 2rem;
   /* background: linear-gradient(193deg, #7c32ff, #c738d8); */
   background-color: #1A2238;
@@ -29,12 +30,69 @@
   text-transform: uppercase;
   letter-spacing: 4px;
   font-weight: 400;
-
 }
 
 .main_card p {
   font-size: 3rem;
   font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-bottom: 0px;
+}
+
+.inner-content-weather {
+  display: flex;
+  gap: 1rem;
+}
+
+.inner-content-weather .span1 {
+  line-height: 22px;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #888;
+}
+
+.inner-content-weather .span2 {
+  line-height: 22px;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #888;
+}
+
+.inner-content-hotel {
+  display: flex;
+  flex-direction: column;
+}
+
+.inner-content-hotel .p1 {
+  line-height: 22px;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1A2238;
+}
+
+.inner-content-hotel .p2 {
+  line-height: 22px;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #888;
+}
+
+.inner-content-news .p1 {
+  line-height: 22px;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #1A2238;
+}
+
+.inner-content-news-div {
+  display: flex;
+  justify-content: space-between;
 }
 
 main {
@@ -45,7 +103,6 @@ main {
   padding: 50px;
   gap: 2.5rem;
   font-family: "Roboto", sans-serif;
-  flex-wrap: wrap;
 }
 
 

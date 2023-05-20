@@ -1,75 +1,157 @@
 import React from 'react'
 import "./Competions.css"
-// import ComputerIcon from '@mui/icons-material/Computer';
-// import { purple } from '@mui/material/colors';
-// import { MdComputer } from "react-icons/md";
 import Slide from 'react-reveal/Slide';
+import { TiWeatherPartlySunny } from "react-icons/ti";
+import { TbTemperatureCelsius } from "react-icons/tb";
+import { BsWind } from "react-icons/bs";
+import { WiHumidity } from "react-icons/wi";
+import { RiCommunityLine } from "react-icons/ri";
+import { IoNewspaperOutline } from "react-icons/io5";
+import WeatherModal from './WeatherModal';
+import HotelModal from './HotelModal';
+import NewsModal from './NewsModal';
 
 const Competions = () => {
-
-  const data = [
-    {
-      id: 1,
-      heading: 'Speed Programming',
-      description: 'In this competition, participants are given a programming task that they must complete as quickly as possible. The faster they can write the code and get it to run successfully, the higher their score.',
-      // img: <ComputerIcon sx={{ fontSize: 50, color: purple[500] }} />
-      // img:<MdComputer />
-    },
-    {
-      id: 1,
-      heading: 'Speed Debugging',
-      description: 'In this competition, participants are given a piece of code that contains errors, and they have to find and fix them as quickly as possible. The faster they can identify and correct the errors, the higher their score.',
-      // img: <ComputerIcon sx={{ fontSize: 50, color: purple[500] }} />
-      // img:<MdComputer />
-    },
-    {
-      id: 1,
-      heading: 'UI/UX Design ',
-      description: 'In this competition, participants have to create a user interface that is both visually appealing and easy to use. This competition is perfect for those who have an eye for design.',
-      // img: <ComputerIcon sx={{ fontSize: 50, color: purple[500] }} />
-      // img:<MdComputer />
-    },
-  ]
 
   return (
     <>
       <div className='comp_main'>
-
-
-
         <Slide left>
           <main>
             <div className="main_card">
-              <h2>Koderz Competitons</h2>
-              <p>Here are some of our Competitions Disciplines</p>
+              <p>Location</p>
+              <h2>Karachi</h2>
             </div>
+            {/* Weather */}
+            <div class="card" data-bs-toggle="modal" data-bs-target="#weatherModal">
+              <div className="icon">
+                <TiWeatherPartlySunny style={{ fontSize: '5rem' }} />
+              </div>
+              <div class="card-content">
+                <h2>
+                  Weather
+                </h2>
+                <p>
+                  Details for weather of Karachi:
+                </p>
 
-            {
-              data.map((h => {
-                return (
+                <p className='inner-content-weather'>
+                  <span className='span1'>
+                    Temp :
+                  </span>
+                  <span className='span2'>
+                    37
+                  </span>
+                  <TbTemperatureCelsius style={{ fontSize: '2rem', color: "#888" }} />
+                </p>
+                <p className='inner-content-weather'>
+                  <span className='span1'>
+                    feel like :
+                  </span>
+                  <span className='span2'>
+                    35
+                  </span>
+                  <TbTemperatureCelsius style={{ fontSize: '2rem', color: "#888" }} />
+                </p>
+                <p className='inner-content-weather'>
+                  <span className='span1'>
+                    Wind Speed :
+                  </span>
+                  <span className='span2'>
+                    2.03
+                  </span>
+                  <BsWind style={{ fontSize: '2rem', color: "#888" }} />
+                </p>
+                <p className='inner-content-weather'>
+                  <span className='span1'>
+                    Humidity :
+                  </span>
+                  <span className='span2'>
+                    14
+                  </span>
+                  <WiHumidity style={{ fontSize: '2rem', color: "#888" }} />
+                </p>
+              </div>
+            </div>
+            {/* Hotels */}
+            <div class="card" data-bs-toggle="modal" data-bs-target="#hotelModal">
+              <div className="icon">
+                <RiCommunityLine style={{ fontSize: '5rem' }} />
+              </div>
 
-                  <div class="card">
-                    <div className="icon">
-                      {h.img}
-                    </div>
+              <div class="card-content">
+                <h2>
+                  Hotels
+                </h2>
+                <p>
+                  Available Hotels in Karachi
+                </p>
+                <p className='inner-content-hotel'>
+                  <p className='p1'>
+                    Pappu Hotel Ltd
+                  </p>
+                  <p className='p2'>
+                    located in karachi
+                  </p>
+                </p>
+                <p className='inner-content-hotel'>
+                  <p className='p1'>
+                    Pappu Hotel Ltd
+                  </p>
+                  <p className='p2'>
+                    located in karachi
+                  </p>
+                </p>
+              </div>
+            </div>
+            {/* News */}
+            <div class="card" data-bs-toggle="modal" data-bs-target="#newsModal">
+              <div className="icon">
+                <IoNewspaperOutline style={{ fontSize: '5rem' }} />
+              </div>
 
-                    <div class="card-content">
-                      <h2>
-                        {h.heading}
-                      </h2>
-                      <p>
-                        {h.description}
-                      </p>
-                    </div>
-
+              <div class="card-content">
+                <h2>
+                  News
+                </h2>
+                <p>
+                  Important news in Karachi
+                </p>
+                <p className='inner-content-news'>
+                  <p className='p1'>
+                    Pakistan ny India ko 10 wicket sy haraya
+                  </p>
+                  <div className='inner-content-news-div'>
+                    <p className='p2'>
+                      DailyTimes
+                    </p>
+                    <p className='p2'>
+                      - 12 june 2023
+                    </p>
                   </div>
-                )
-              }))
-            }
+                </p>
+                <p className='inner-content-news'>
+                  <p className='p1'>
+                    Pakistan ny India ko 10 wicket sy haraya
+                  </p>
+                  <div className='inner-content-news-div'>
+                    <p className='p2'>
+                      DailyTimes
+                    </p>
+                    <p className='p2'>
+                      - 12 june 2023
+                    </p>
+                  </div>
+                </p>
+              </div>
+            </div>
           </main>
         </Slide>
 
       </div>
+      <WeatherModal />
+      <HotelModal />
+      <NewsModal />
     </>
   )
 }
