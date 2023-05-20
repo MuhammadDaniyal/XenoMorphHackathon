@@ -27,7 +27,7 @@ const Competions = () => {
               <div className="icon">
                 <TiWeatherPartlySunny style={{ fontSize: '5rem' }} />
               </div>
-              <div class="card-content" style={{background:'url() '}}>
+              <div class="card-content">
                 <h2>
                   Weather
                 </h2>

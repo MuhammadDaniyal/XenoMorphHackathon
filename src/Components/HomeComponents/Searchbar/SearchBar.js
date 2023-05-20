@@ -21,7 +21,7 @@ const SearchBar = () => {
 
     const addstops = () => {
         const temp = stopinputref.current.value;
-        if(!loc.includes(temp) && temp!==""){
+        if(!loc.includes(temp) && temp!=="" && trip.origin!=="" && trip.destination!==""){
             setloc([...loc, temp])
             stopinputref.current.value = ''
         }
