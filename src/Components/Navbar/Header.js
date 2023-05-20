@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import Navbar from './Navbar.js'
 import './Navbar.css'
+import SignUpModal from './SignUpModal';
+import LoginModal from './LoginModal';
 
 const Header = () => {
 
@@ -25,12 +27,18 @@ const Header = () => {
     }, [])
 
     return (
-        <header className={`${isVisible ? 'header  scroll-header' : 'header '}`} >
-            <NavLink to={'/'}>
-                <img className='logo rotateY-logo' src={require('../../pakroute_logo.png')} alt="" />
-            </NavLink>
-            <Navbar />
-        </header>
+        <>
+
+            <header className={`${isVisible ? 'header  scroll-header' : 'header '}`} >
+                <NavLink to={'/'}>
+                    <img className='logo rotateY-logo' src={require('../../pakroute_logo.png')} alt="" />
+                </NavLink>
+                <Navbar />
+            </header>
+
+            <SignUpModal />
+            <LoginModal />
+        </>
     )
 }
 

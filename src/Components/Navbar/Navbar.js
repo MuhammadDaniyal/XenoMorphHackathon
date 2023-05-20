@@ -17,11 +17,11 @@ const Navbar = () => {
                         </li>
                         <li>
                             <NavLink to='/' className='navbar-link home-link bg-dark px-4 py-2'
-                                onClick={() => { setActiveMenu(false) }}>Login</NavLink>
+                                onClick={() => { setActiveMenu(false) }} data-bs-toggle="modal" data-bs-target="#loginModal">Login</NavLink>
                         </li>
                         <li>
                             <NavLink to='/' className='navbar-link home-link bg-dark px-4 py-2'
-                                onClick={() => { setActiveMenu(false) }}>Signup</NavLink>
+                                onClick={() => { setActiveMenu(false) }} data-bs-toggle="modal" data-bs-target="#signUpModal">Signup</NavLink>
                         </li>
                     </ul>
 
