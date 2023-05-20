@@ -16,31 +16,12 @@ const Navbar = () => {
                                 onClick={() => { setActiveMenu(false) }}>Home</NavLink>
                         </li>
                         <li>
-                            <NavLink to='/about' className='navbar-link home-link'
-                                onClick={() => { setActiveMenu(false) }}>About</NavLink>
+                            <NavLink to='/' className='navbar-link home-link bg-dark px-4 py-2'
+                                onClick={() => { setActiveMenu(false) }}>Login</NavLink>
                         </li>
                         <li>
-                            <NavLink to='/blogs' className='navbar-link home-link'
-                                onClick={() => { setActiveMenu(false) }}>Blogs</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to='/events' className='navbar-link home-link'
-                                onClick={() => { setActiveMenu(false) }}>Events</NavLink>
-                        </li>
-                        <li className=' dropdown'>
-                            <NavLink to='/team'
-                                className='navbar-link team-link'
-                                data-bs-toggle="dropdown"
-                                onClick={() => { setActiveMenu(false) }}>Team
-                            </NavLink>
-                            <ul className="sub-menu dropdown-menu">
-                                <li><NavLink className="drop-link dropdown-item" to={'/member-registration'}>Join Us</NavLink></li>
-                                <li><NavLink className="drop-link dropdown-item" to={'/team'}>Members</NavLink></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <NavLink to='/contact-us' className='navbar-link home-link'
-                                onClick={() => { setActiveMenu(false) }}>Contact Us</NavLink>
+                            <NavLink to='/' className='navbar-link home-link bg-dark px-4 py-2'
+                                onClick={() => { setActiveMenu(false) }}>Signup</NavLink>
                         </li>
                     </ul>
 

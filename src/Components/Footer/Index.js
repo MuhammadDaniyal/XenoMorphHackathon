@@ -10,8 +10,7 @@ const Index = () => {
                     <div className="col-lg-3 col-mg-3 col-10 pt-4 mt-3">
                         {/* <!-- <h1 className="justify-content-center align-items-center d-flex">STF</h1> --> */}
                         <div className="d-flex justify-content-center align-items-center">
-                            <img className="mb-5 mt-2" src={"./images/koders-club-logo.png"} alt=""
-                            />
+                            <img className="mb-5 mt-2" src={require('../../pakroute_logo.png')} alt="" width="100rem"/>
                         </div>
                         <h3 className="footer-h3 justify-content-center align-items-center d-flex  pb-3"> Our Mission</h3>
                         <p style={{ fontSize: "1.5rem", fontWeight: "600" }}>We are a Community of Coding Enthusiasts hoping to make every individual better</p>

@@ -10,7 +10,7 @@ const Contact = ({heading='true'}) => {
             <section className="contactus-section">
                 <div className="container">
                 {
-                    heading === 'true' &&  <h2 className='mainheading'>Contact Us</h2>
+                    heading === 'true' &&  <h2 className='mainheading'>Provide Feedback</h2>
                 }
                     <div className="row mx-auto">
                         <div className="col-12 col-lg-12 mx-auto">
@@ -18,10 +18,10 @@ const Contact = ({heading='true'}) => {
                                 <Slide left >
                                     <div className="col-12 col-lg-4 contact-leftside">
                                         <h3 className="main-heading fw-bold" >
-                                            Connect With Our <br />  Team.
+                                            Give Feedback To Our <br />  Team.
                                         </h3>
                                         <p className="main-work-para">
-                                            We provide complete support to your queries.
+                                            We provide complete support to your Feedbacks.
                                         </p>
                                         <figure >
                                             <img
@@ -36,72 +36,14 @@ const Contact = ({heading='true'}) => {
                                     <div className="col-12 col-lg-6 contact-rightside">
                                         <form action='https://formspree.io/f/mdovpvnj' method='POST'>
                                             <div className="row">
-                                                <div className="col-12 col-lg-6 ">
-                                                    <input type="text"
-                                                        name="firstName"
-                                                        id=""
-                                                        placeholder='First Name'
-                                                        autocomplete="off"
-                                                        required='true'
-                                                        className='my_input'
-                                                    />
-                                                    <span class="separator"> </span>
-                                                </div>
-                                                <div className="col-12 col-lg-6 ">
-                                                    <input type="text"
-                                                        name="lastName"
-                                                        id=""
-                                                        placeholder='Last Name'
-                                                        className='my_input'
-                                                    />
-                                                    <span class="separator"> </span>
-                                                </div>
-                                            </div>
-
-                                            <div className="row">
-                                                <div className="col-12 col-lg-6 ">
-                                                    <input type="email"
-                                                        name="email"
-                                                        id=""
-                                                        placeholder='Email'
-                                                        autocomplete="off"
-                                                        required='true'
-                                                        className='my_input'
-                                                    />
-                                                    <span class="separator"> </span>
-                                                </div>
-                                                <div className="col-12 col-lg-6 ">
-                                                    <input type="text"
-                                                        name="phone"
-                                                        id=""
-                                                        placeholder='Phone Number'
-                                                        autocomplete="off"
-                                                        required='true'
-                                                        className='my_input'
-                                                    />
-                                                    <span class="separator"> </span>
-                                                </div>
-                                            </div>
-                                            <div className="row">
-                                                <div className="col-12 col-lg-12 ">
-                                                    <input type="text"
-                                                        name="address"
-                                                        id=""
-                                                        placeholder='Add Address'
-                                                        autocomplete="off"
-                                                        required='true'
-                                                        className='my_input'
-                                                    />
-                                                    <span class="separator"> </span>
-                                                </div>
-                                            </div>
-                                            <div className="row">
                                                 <div className="col-12 col-lg-12">
-                                                    <input type="text"
+                                                    <textarea type="text"
                                                         name="message"
                                                         id=""
-                                                        placeholder='Enter your Message'
+                                                        placeholder='Enter your Feedback'
                                                         className='my_input'
+                                                        rows="10"
+                                                        style={{border:"1px solid black",padding:"10px"}}
                                                     />
                                                     <span class="separator"> </span>
                                                 </div>
@@ -111,7 +53,7 @@ const Contact = ({heading='true'}) => {
                                                     class="form-check-input"
                                                     type="checkbox" />
                                                 <label class="form-check-label" className='main-work-para'>
-                                                    I agree that the Koder's Club  may contact me at the
+                                                    I agree that the Discover Pakistan  may contact me at the
                                                     email address or phone number above
                                                 </label>
                                             </div>
