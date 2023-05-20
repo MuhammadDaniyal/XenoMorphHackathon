@@ -23,11 +23,11 @@ const Competions = () => {
               <h2>Karachi</h2>
             </div>
             {/* Weather */}
-            <div class="card" data-bs-toggle="modal" data-bs-target="#weatherModal">
+            <div class="card" data-bs-toggle="modal" data-bs-target="#weatherModal" >
               <div className="icon">
                 <TiWeatherPartlySunny style={{ fontSize: '5rem' }} />
               </div>
-              <div class="card-content">
+              <div class="card-content" style={{background:'url() '}}>
                 <h2>
                   Weather
                 </h2>
