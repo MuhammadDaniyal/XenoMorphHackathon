@@ -14,7 +14,7 @@ const NewsModal = () => {
                         <div className="container">
                             <div className="row">
                                 <div className="col-12 col-lg-11 col-md-11 mx-auto">
-
+                                
                                 </div>
                             </div>
                         </div>
