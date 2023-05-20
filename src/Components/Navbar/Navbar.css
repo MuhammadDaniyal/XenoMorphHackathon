@@ -1,0 +1,246 @@
+/* ----------------------- header Style ---------------------------- */
+
+header {
+    height: 8rem;
+    padding: 0 4.8rem;
+    /* background: linear-gradient(135deg, #7B33FD, #8332FD, #b83ce4) !important; */
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0;
+}
+
+.scroll-header {
+    position: fixed !important;
+    background: #243b55;
+    top: -70px;
+    width: 100%;
+    z-index: 99;
+    transform: translateY(70px);
+    transition: transform 500ms ease;
+    -webkit-transition: transform 500ms ease;
+}
+
+.logo {
+    height: 6rem;
+    /* margin-bottom: 0.5rem; */
+    width: auto;
+}
+
+.rotateY-logo:hover {
+    transform: rotateY(360deg);
+    -moz-transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    transform-origin: center;
+    -moz-transform-origin: center;
+    -webkit-transform-origin: center;
+    transition: 2.0s ease;
+    -moz-transition: 2.0s ease;
+    -webkit-transition: 2.0s ease;
+}
+
+
+/* ----------------------- Navbar Style ---------------------------- */
+
+.navbar {
+    position: unset;
+}
+
+/* ul */
+.navbar-lists {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    margin: 0;
+}
+
+/* li */
+.navbar-link:link,
+.navbar-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    /* color: #212529; */
+    color: #fff;
+    transition: color 0.3s linear;
+    /* hover effect acha nzr aye jbhi  */
+}
+
+/* .navbar-link:hover,
+.navbar-link:active {
+    color: #8490ff !important;
+    color: #b83ce4 !important;
+}
+ */
+
+.mobile-nav--btn {
+    display: none;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+/*specific cross x icon hide rhy but menu icon dekha isilya  */
+.mobile-nav--icon[name="close-outline"] {
+    display: none;
+}
+
+.close-outline {
+    display: none;
+}
+
+/* ----------------------- header & Navbar Responisve Style ---------------------------- */
+
+@media (max-width: 798px) {
+    .logo {
+        height: 6rem !important;
+    }
+
+    .mobile-nav--btn {
+        display: inline-block;
+        z-index: 999;
+        border: #212529;
+    }
+
+    .mobile-nav--btn .mobile-nav--icon {
+        font-size: 4.2rem;
+        color: #fff;
+    }
+
+    .active .mobile-nav--icon {
+        display: none;
+        font-size: 4.2rem;
+        position: absolute;
+        /*header my relative ki vi hy*/
+        top: 30%;
+        right: 10%;
+        color: #fff;
+        z-index: 9999;
+    }
+
+    .active .close-outline {
+        display: inline-block;
+    }
+
+    .navbar-lists {
+        width: 100vw;
+        height: 100vh !important;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        visibility: hidden;
+        opacity: 0;
+        transform: translateX(100%);
+        /* transform-origin: top; */
+        transition: all 0.3s linear;
+    }
+
+    .active .navbar-lists {
+        background: #1a2238;
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(0);
+        z-index: 999;
+        transform-origin: right;
+        transition: all 0.3s linear;
+    }
+
+    .navbar-link {
+        font-size: 4.2rem !important;
+    }
+
+}
+
+/* multipage web */
+.navbar-link {
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+}
+
+.navbar-link::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2.3px;
+    border-radius: 4px;
+    background-color: #fff;
+    bottom: -4px;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.navbar-link:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+
+.team-link {
+    position: relative;
+}
+
+.sub-menu {
+    position: absolute;
+    background-color: #f1f5fd;
+    color: #1a2238;
+    width: 18rem;
+    right: -3rem;
+    top: 4rem !important;
+    border-radius: 15px;
+    padding: 26px 0 22px 0;
+    transform: translate3d(0, 0, 0);
+    z-index: 99;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.dropdown-menu[data-bs-popper] {
+    /* top: 100%; */
+    left: unset;
+}
+
+.sub-menu::before {
+    border-color: transparent transparent #f1f5fd;
+    border-style: solid;
+    border-width: 0 10px 11px;
+    content: '';
+    left: 120px;
+    position: absolute;
+    top: -10px;
+}
+
+
+.drop-link {
+    color: #1a2238 !important;
+    background: #f1f5fd !important;
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: .4px;
+    line-height: calc(22/16);
+    padding: 8px 20px 8px 40px;
+}
+
+.drop-link:hover {
+    color: #f1f5fd !important;
+    background: linear-gradient(to right, #243b55, #141e30, #243b55) !important;
+}
+
+/* .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    remove the gap so it doesn't close
+} */

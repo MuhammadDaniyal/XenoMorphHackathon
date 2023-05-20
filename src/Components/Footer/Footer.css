@@ -1,0 +1,64 @@
+.footer {
+    /* background: url('https://preview.colorlib.com/theme/edumark/img/banner/footer_bg.png.webp'); */
+    background: #1a2238;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer-h3 {
+    font-size: 2.9rem;
+}
+
+.secondCol {
+    font-size: 1.6rem;
+}
+
+.link-div {
+    font-weight: 300;
+    font-size: 1.4rem;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.link-inner-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.link-inner-div > div:hover{
+    text-decoration: underline;
+}
+
+.thirdCol-inner-div {
+    font-size: 1.6rem;
+}
+
+.footer-icon {
+    cursor: pointer;
+}
+
+.my-btn-F {
+    color: white;
+    background: linear-gradient(to right, #141e30, #243b55);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    padding: 10px 25px;
+    margin-top: 15px;
+    outline: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: width 1s ease;
+    width: 14rem !important;
+    font-size: 1.5rem;
+}
+
+.my-btn-F:hover {
+    cursor: pointer;
+    border: 2px solid #fff;
+    background: linear-gradient(to left, #141e30, #243b55);
+    width: 60% !important;
+}
