@@ -29,6 +29,16 @@
     width: 100rem;
     /* height: 8rem; */
     border-radius: 0px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.inner-search-bar2 {
+    background: #f1f5fd;
+    width: 100rem;
+    /* height: 8rem; */
+    border-radius: 0px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 .my_input-searchbar {
@@ -126,9 +136,30 @@
     font-size: 13px;
     text-decoration: none;
     border-radius: 5px;
+    white-space: nowrap;
 }
 
 .tag-search:hover {
     background: linear-gradient(to right, #141e30, #243b55) !important;
     color: #fff;
 }
+
+/* Customize the scrollbar track */
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* or any color you prefer */
+  }
+  
+  /* Customize the scrollbar thumb */
+  ::-webkit-scrollbar-thumb {
+    background-color:  #243b55; /* or any color you prefer */
+  }
+  
+  /* Customize the scrollbar thumb on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* or any color you prefer */
+  }
+  
+  /* Customize the height of the scrollbar */
+  ::-webkit-scrollbar {
+    height: 6px; /* Set the height you prefer */
+  }

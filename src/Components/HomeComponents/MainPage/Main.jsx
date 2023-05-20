@@ -9,7 +9,7 @@ const Main = () => {
     <>
       <div className="main">
 
-        <Fade right>
+        {/* <Fade right> */}
           <div className="intro align-items-center">
             <h1>Discover Pakistan</h1>
             <p className='text-center'>Discover, Explore, Experience -  Your Gateway to Unforgettable Journeys!</p>
@@ -20,7 +20,7 @@ const Main = () => {
               </div>
             </Fade>
           </div>
-        </Fade>
+        {/* </Fade> */}
 
       </div>
     </>
